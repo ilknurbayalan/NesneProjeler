@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 class Product:
-    def _init_(self, name=None, price=0, quantity=1):
+    def __init__(self, name=None, price=0, quantity=1):
         
         self._name = name if name is not None else "Unknown"
         self._price = price if price >= 0 else 0
@@ -98,7 +98,7 @@ class ProductHelper:
         return total_balance_with_tax
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
 
     file_path = "Products.txt"
     
