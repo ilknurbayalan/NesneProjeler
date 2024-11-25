@@ -48,8 +48,8 @@ public:
 };
 
 int main() {
-    Student student("Ahmet", 20, "12345");
-    Teacher teacher("Ayşe", 35, "Matematik");
+    Student student("Sıla", 20, "23456");
+    Teacher teacher("Sema", 35, "İngilizce");
 
     student.displayInfo();
     teacher.displayInfo();
