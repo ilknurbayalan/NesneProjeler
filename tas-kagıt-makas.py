@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 
 class Player(ABC):
-    def _init_(self, name):
+    def __init__(self, name):
         self.name = name
         self.score = 0
     
@@ -19,18 +19,17 @@ class Player(ABC):
         self.score += 1
 
 class ComputerPlayer(Player):
-    def _init_(self, name="bilgisayar"):
-        super()._init_(name)
+    def __init__(self, name="bilgisayar"):
+        super().__init__(name)
     
     @abstractmethod
     def make_move(self):
         pass
 
-# 2. Alt Sınıfların Tanımlanması
 
 class HumanPlayer(Player):
-    def _init_(self, name):
-        super()._init_(name)
+    def __init__(self, name):
+        super().__init__(name)
     
     def make_move(self):
         print("\nSeçim yapın:")
@@ -126,5 +125,5 @@ def main():
     
     print("Teşekkürler! Oynamayı tekrar bekleriz.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
