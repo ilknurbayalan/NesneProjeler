@@ -23,8 +23,8 @@ class Teacher(Person):
         return f"{super().display_info()}, Subject: {self.subject}"
 
 # Örnek kullanım
-student = Student("Ahmet", 20, "12345")
-teacher = Teacher("Ayşe", 35, "Matematik")
+student = Student("Sıla", 20, "23456")
+teacher = Teacher("Sema", 35, "İngilizce")
 
 print(student.display_info())
 print(teacher.display_info())
